@@ -27,6 +27,9 @@ JFactory::getDocument()->addScriptDeclaration("
 	};
 ");
 ?>
+// code added for double image tabs and image src empty when save weblink
+<?php $this->ignore_fieldsets = array('images'); ?>
+// end code added for double image tabs and image src empty when save weblink
 
 <form action="<?php echo JRoute::_('index.php?option=com_weblinks&layout=edit&id=' . (int) $this->item->id); ?>" method="post" name="adminForm" id="weblink-form" class="form-validate">
 
